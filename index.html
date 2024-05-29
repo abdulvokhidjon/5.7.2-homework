@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Gradient Background | 5.7.2 - homework</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Add custom styles for full height and centering */
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="text-center space-y-4">
+        <h1 class="text-2xl font-bold">Ranglarni kiritish orqali o'zingizni fon ramgingizni yarating</h1>
+        <div class="space-y-2">
+            <div>
+                <label for="color1" class="block">First Color:</label>
+                <input type="color" id="color1" class="border rounded p-1">
+            </div>
+            <div>
+                <label for="color2" class="block">Second Color:</label>
+                <input type="color" id="color2" class="border rounded p-1">
+            </div>
+            <div>
+                <label for="angleRange" class="block">Gradient Angle (0-360): <span id="angleValue" class="font-bold">90</span>°</label>
+                <input type="range" id="angleRange" class="w-full" min="0" max="360" value="90">
+            </div>
+        </div>
+        <button onclick="setGradient()" class="bg-blue-500 text-white px-4 py-2 rounded">Apply Gradient</button>
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
